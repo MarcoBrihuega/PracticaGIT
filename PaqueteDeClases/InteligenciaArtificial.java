@@ -1,10 +1,11 @@
 package PaqueteDeClases;
 
-public class InteligenciArtificial {
+public class InteligenciaArtificial {
 
     /**
      * ESTA CLASE SIRVE PARA PODER CREAR UN OBJETO DE TIPO IA , EL CUAL DENTRO DE SI MISMO TIENE 2 FUNCIONES
      * @author MARCO BRIHUEGA GARCIA
+     * @since 1.0
      */
     String nombreIA;
     int idIA;
@@ -14,7 +15,7 @@ public class InteligenciArtificial {
      * @param nombreIA ES EL NOMBRE QUE SE ASIGNARA PARA LA IA
      * @param idIA  ES EL IDENTIFICADOR NUMERICO DE LA IA
      */
-    public InteligenciArtificial(String nombreIA, int idIA) {
+    public InteligenciaArtificial(String nombreIA, int idIA) {
         this.nombreIA = nombreIA;
         this.idIA = idIA;
     }
@@ -47,7 +48,7 @@ public class InteligenciArtificial {
      * MUESTRA LA INFO DEL OBJETO CLASE IA QUE SE LE PASA COMO PARAMETRO
      * @param ia EL PARAMETRO ES EL OBJETO DE CLASE IA QUE SE PASA POR PARAMETRO
      */
-    public void mostrarInfoIA(InteligenciArtificial ia){
+    public void mostrarInfoIA(InteligenciaArtificial ia){
 
         System.out.println(ia.toString());
         System.out.println("***********");
@@ -56,6 +57,17 @@ public class InteligenciArtificial {
     public void pedirleBuenosDias(){
 
         System.out.println("BUENOS DIAS SOY " + getNombreIA());
+    }
+
+    /**
+     * ESTE METODO MUESTRA LA INFO DE LA IA COMO SU NOMBRE E ID
+     * @param ia ES EL OBJETO DE CLASE IA QUE SE LE PASA
+     * @deprecated replaced by {@link #mostrarInfoIA(InteligenciaArtificial)}
+     */
+    public void verInformacionIA(InteligenciaArtificial ia){
+        System.out.println(ia.getNombreIA());
+        System.out.println(ia.getIdIA());
+
     }
 
 }
