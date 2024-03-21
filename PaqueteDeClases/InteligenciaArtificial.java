@@ -6,6 +6,7 @@ public class InteligenciaArtificial {
      * ESTA CLASE SIRVE PARA PODER CREAR UN OBJETO DE TIPO IA , EL CUAL DENTRO DE SI MISMO TIENE 2 FUNCIONES
      * @author MARCO BRIHUEGA GARCIA
      * @since 1.0
+     * @version 2.0
      */
     String nombreIA;
     int idIA;
@@ -62,7 +63,7 @@ public class InteligenciaArtificial {
     /**
      * ESTE METODO MUESTRA LA INFO DE LA IA COMO SU NOMBRE E ID
      * @param ia ES EL OBJETO DE CLASE IA QUE SE LE PASA
-     * @deprecated replaced by {@link #mostrarInfoIA(InteligenciaArtificial)}
+     * @deprecated replaced by {@link #mostrarInfoIA(InteligenciaArtificial)}   º
      */
     public void verInformacionIA(InteligenciaArtificial ia){
         System.out.println(ia.getNombreIA());
@@ -70,4 +71,12 @@ public class InteligenciaArtificial {
 
     }
 
+    /**
+     * ESTE METODO SE USA PARA SABER LAS IDS
+     * @param ia es el objeto de clase ia el cual le paso por el constructor
+     * @return devuelve en forma de in el id de la ia que se eniva por parametro
+     */
+    public int pedirId(InteligenciaArtificial ia ){
+        return idIA;
+    }
 }
