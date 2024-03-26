@@ -1,4 +1,4 @@
-package PaqueteDeClases;
+package PracticaGIT.PaqueteDeClases;
 
 public class Main {
 }
